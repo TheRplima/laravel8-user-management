@@ -54,9 +54,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Home</a>
                     </li>
+                    @can('is-admin')
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('admin.users.index') }}">Users</a>
                     </li>
+                    @endcan
                 </ul>
             </div>
         </div>
